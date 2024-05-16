@@ -17,8 +17,46 @@ body{
 }
 
 header{
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px 0;
     width: 1500px;
     height: 70px;
+    position: fixed;
+}
+
+header div{
+    display: flex;
+
+}
+
+.header_menu{
+    list-style: none;
+    font-weight: 400;
+    display: flex;
+    text-decoration: none;
+    gap: 12px;
+    align-items: center;
+}	
+
+.menu_item a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.menu_item a:hover{
+    color: #fccd4b;
+}
+
+
+
+
+
+.banner img{
+    width: 100%;
+    height: 667px;
+}
+.banner h1{
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
 }
