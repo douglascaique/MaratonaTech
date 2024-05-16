@@ -1,0 +1,132 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #13141A;
+    font-family: Biryani;
+}
+
+h1, h2, h3{
+  color: #fff;
+}
+
+header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border-bottom: #fff solid 4px;
+
+}
+
+.logo-img{
+  height: 5.0vw;
+  margin: 2vw;
+}
+
+span.header{
+  color: aqua;
+}
+
+
+/* Main */
+
+
+section h2{
+  color: #fff;
+  border-bottom: rgba(255,255,255,.2) solid 1px;
+}
+
+
+/* about */
+
+.about{
+  display: flex;
+  gap:20px;
+}
+.logo-about{
+  border: 5px solid #FB3640;
+  border-radius: 20px;
+  padding: 10px;
+
+  box-shadow: #fff 0px 0px 20px 1px;
+}
+
+.about p{
+  color: white;
+  text-align: justify;
+}
+
+
+/* jogos */
+.card{
+  height: 80px;
+  width: 80px;
+
+  border:#13141A solid 1px;
+  border-radius: 10px;
+}
+
+
+/* hamburger menu */
+a {
+    position: absolute;
+    top: 30px;
+    right: 230px;
+    z-index: 1;
+    width: 36px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 11px 0 0 9px;
+  }
+  span {
+    display: block;
+    width: 34px;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    transition: .5s;
+    pointer-events: none;
+  }
+  span:nth-child(2) {
+    margin: 5px 0;
+  }
+  .open {
+    border-color: rgba(255,255,255,.2);
+  }
+  .open span {
+    background: #fff;
+  }
+  .open :first-child {
+    transform: translateY(5px) rotate(-45deg);
+  }
+  .open :nth-child(2) {
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+  .open :last-child {
+    transform: translateY(-5px) rotate(-135deg);
+  }
+  nav {
+    position: absolute;
+    width: 200px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(239, 241, 241);
+    transform: translateX(-100%);
+    transition: .5s;
+  }
+  .open + nav {
+    transform: none;
+  }
+  code {
+    color: transparent;
+    font-size: 0;
+  }
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
